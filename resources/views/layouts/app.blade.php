@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Limitless Core CSS -->
+    <link href="{{asset('global_assets/css/icons/icomoon/styles.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{asset('global_assets/css/icons/fontawesome/styles.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap_limitless.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.min.css') }}">
@@ -33,7 +35,6 @@
             color: #2d3748;
         }
 
-        /* ─── SIDEBAR ─────────────────────────────────── */
         .erp-sidebar {
             position: fixed;
             top: 0; left: 0;
@@ -45,6 +46,10 @@
             z-index: 1000;
             transition: transform 0.3s ease;
             box-shadow: 4px 0 24px rgba(0,0,0,0.25);
+        }
+
+        .erp-sidebar.closed {
+            transform: translateX(-100%);
         }
 
         .sidebar-brand {
@@ -206,6 +211,11 @@
             z-index: 900;
             box-shadow: 0 2px 12px rgba(0,0,0,0.06);
             border-bottom: 1px solid #e8edf2;
+            transition: left 0.3s ease;
+        }
+
+        .erp-navbar.expanded {
+            left: 0;
         }
 
         .navbar-left {
@@ -214,15 +224,19 @@
             gap: 12px;
         }
 
-        .navbar-left .page-title {
+        .navbar-left .erp-page-title {
             font-size: 16px;
             font-weight: 700;
             color: var(--brand-dark);
+            margin: 0;
+            line-height: 1.2;
         }
 
         .navbar-left .breadcrumb-erp {
             font-size: 12px;
             color: #94a3b8;
+            margin-top: 2px;
+            line-height: 1.2;
         }
 
         .navbar-right {
@@ -279,6 +293,11 @@
             margin-top: var(--navbar-h);
             min-height: calc(100vh - var(--navbar-h));
             padding: 28px 28px;
+            transition: margin-left 0.3s ease;
+        }
+
+        .erp-content.expanded {
+            margin-left: 0;
         }
 
         /* ─── CARD UTILITY ─────────────────────────────── */
@@ -554,7 +573,7 @@
 <aside class="erp-sidebar" id="erpSidebar">
     <div class="sidebar-brand">
         <div class="logo-row">
-            <div class="logo-icon">💰</div>
+            <div class="logo-icon"><i class="icon-stats-bars2" style="font-size: 30px;"></i></div>
             <div>
                 <div class="company-name">{{ Auth::user()->nama_perusahaan ?? 'Perusahaan' }}</div>
                 <div class="app-label">Finance ERP</div>
@@ -572,11 +591,6 @@
 
         <div class="nav-section-label">Master Data</div>
 
-        <a href="{{ route('stok.index') }}"
-           class="nav-item-erp {{ request()->routeIs('stok.*') ? 'active' : '' }}">
-            <span class="nav-icon">📦</span> Manajemen Stok
-        </a>
-
         <a href="{{ route('suplier.index') }}"
            class="nav-item-erp {{ request()->routeIs('suplier.*') ? 'active' : '' }}">
             <span class="nav-icon">🏭</span> Suplier
@@ -585,6 +599,11 @@
         <a href="{{ route('pelanggan.index') }}"
            class="nav-item-erp {{ request()->routeIs('pelanggan.*') ? 'active' : '' }}">
             <span class="nav-icon">👥</span> Customer
+        </a>
+
+        <a href="{{ route('stok.index') }}"
+           class="nav-item-erp {{ request()->routeIs('stok.*') ? 'active' : '' }}">
+            <span class="nav-icon">📦</span> Manajemen Stok
         </a>
 
         <div class="nav-section-label">Transaksi</div>
@@ -644,8 +663,8 @@
 <header class="erp-navbar">
     <div class="navbar-left">
         <button class="navbar-btn" id="sidebarToggle" title="Toggle Sidebar">☰</button>
-        <div>
-            <div class="page-title">@yield('page-title', 'Dashboard')</div>
+        <div style="display: flex; flex-direction: column; justify-content: center;">
+            <div class="erp-page-title">@yield('page-title', 'Dashboard')</div>
             @hasSection('breadcrumb')
             <div class="breadcrumb-erp">@yield('breadcrumb')</div>
             @endif
@@ -689,8 +708,12 @@
 <script>
     // Sidebar toggle
     const sidebar = document.getElementById('erpSidebar');
+    const navbar = document.querySelector('.erp-navbar');
+    const content = document.querySelector('.erp-content');
     document.getElementById('sidebarToggle').addEventListener('click', function () {
-        sidebar.classList.toggle('open');
+        sidebar.classList.toggle('closed');
+        navbar.classList.toggle('expanded');
+        content.classList.toggle('expanded');
     });
 
     // Setup AJAX CSRF

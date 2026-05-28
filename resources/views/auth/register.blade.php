@@ -6,6 +6,8 @@
     <title>Daftar Akun — MulyadiHB Finance ERP</title>
     <meta name="description" content="Daftarkan akun perusahaan Anda di sistem ERP MulyadiHB Finance">
 
+    <link href="{{asset('global_assets/css/icons/icomoon/styles.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{asset('global_assets/css/icons/fontawesome/styles.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap_limitless.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.min.css') }}">
@@ -200,7 +202,7 @@
 <div class="register-wrapper">
     <div class="register-card">
         <div class="brand-logo">
-            <div class="logo-icon">💰</div>
+            <div class="logo-icon"><i class="icon-stats-bars2" style="font-size: 30px;"></i></div>
             <h1>Buat Akun Perusahaan</h1>
             <p>MulyadiHB Finance ERP System</p>
         </div>

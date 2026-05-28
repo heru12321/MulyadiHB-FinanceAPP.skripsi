@@ -7,6 +7,8 @@
     <meta name="description" content="Login ke sistem ERP keuangan MulyadiHB Finance">
 
     <!-- Limitless CSS -->
+    <link href="{{asset('global_assets/css/icons/icomoon/styles.min.css') }}" rel="stylesheet" type="text/css">
+	<link href="{{asset('global_assets/css/icons/fontawesome/styles.min.css') }}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/bootstrap_limitless.min.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/components.min.css') }}">
@@ -247,7 +249,7 @@
     <div class="login-card">
         <!-- Brand -->
         <div class="brand-logo">
-            <div class="logo-icon">💰</div>
+            <div class="logo-icon"><i class="icon-stats-bars2" style="font-size: 30px;"></i></div>
             <h1>MulyadiHB Finance</h1>
             <p>Enterprise Resource Planning System</p>
         </div>
@@ -296,11 +298,6 @@
                 @error('password')
                     <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
-            </div>
-
-            <div class="remember-row">
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">Ingat saya di perangkat ini</label>
             </div>
 
             <button type="submit" class="btn-login" id="btnLogin">

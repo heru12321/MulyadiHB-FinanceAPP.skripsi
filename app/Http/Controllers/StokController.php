@@ -24,7 +24,8 @@ class StokController extends Controller
     {
         $stoks = MStok::where('user_id', Auth::id())
             ->latest()->paginate(15);
-        return view('stok.index', compact('stoks'));
+        $supliers = MSuplier::where('user_id', Auth::id())->get();
+        return view('stok.index', compact('stoks', 'supliers'));
     }
 
     public function create()
