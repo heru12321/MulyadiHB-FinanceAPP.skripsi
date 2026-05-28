@@ -1,0 +1,137 @@
+id;nomor;nama;nama_kategori;tipe_saldo
+1;1-10001;Kas;Kas & Bank;Debit
+2;1-10002;Rekening Bank;Kas & Bank;Debit
+3;1-10003;Giro;Kas & Bank;Debit
+4;1-10100;Piutang Usaha;Akun Piutang;Debit
+5;1-10101;Piutang Belum Ditagih;Akun Piutang;Debit
+6;1-10102;Cadangan Kerugian Piutang;Akun Piutang;Debit
+7;1-10200;Persediaan Barang;Persediaan;Debit
+8;1-10300;Piutang Lainnya;Aktiva Lancar Lainnya;Debit
+9;1-10301;Piutang Karyawan;Aktiva Lancar Lainnya;Debit
+10;1-10400;Dana Belum Disetor;Aktiva Lancar Lainnya;Debit
+11;1-10401;Aset Lancar Lainnya;Aktiva Lancar Lainnya;Debit
+12;1-10402;Biaya Dibayar Di Muka;Aktiva Lancar Lainnya;Debit
+13;1-10403;Uang Muka;Aktiva Lancar Lainnya;Debit
+14;1-10500;PPN Masukan;Aktiva Lancar Lainnya;Debit
+15;1-10501;Pajak Dibayar Di Muka - PPh 22;Aktiva Lancar Lainnya;Debit
+16;1-10502;Pajak Dibayar Di Muka - PPh 23;Aktiva Lancar Lainnya;Debit
+17;1-10503;Pajak Dibayar Di Muka - PPh 25;Aktiva Lancar Lainnya;Debit
+18;1-10700;Aset Tetap - Tanah;Aktiva Tetap;Debit
+19;1-10701;Aset Tetap - Bangunan;Aktiva Tetap;Debit
+20;1-10702;Aset Tetap - Building Improvements;Aktiva Tetap;Debit
+21;1-10703;Aset Tetap - Kendaraan;Aktiva Tetap;Debit
+22;1-10704;Aset Tetap - Mesin & Peralatan;Aktiva Tetap;Debit
+23;1-10705;Aset Tetap - Perlengkapan Kantor;Aktiva Tetap;Debit
+24;1-10706;Aset Tetap - Aset Sewa Guna Usaha;Aktiva Tetap;Debit
+25;1-10707;Aset Tak Berwujud;Aktiva Tetap;Debit
+26;1-10751;Akumulasi Penyusutan - Bangunan;Depresiasi & Amortisasi;Debit
+27;1-10752;Akumulasi Penyusutan - Building Improvements;Depresiasi & Amortisasi;Debit
+28;1-10753;Akumulasi penyusutan - Kendaraan;Depresiasi & Amortisasi;Debit
+29;1-10754;Akumulasi Penyusutan - Mesin & Peralatan;Depresiasi & Amortisasi;Debit
+30;1-10755;Akumulasi Penyusutan - Peralatan Kantor;Depresiasi & Amortisasi;Debit
+31;1-10756;Akumulasi Penyusutan - Aset Sewa Guna Usaha;Depresiasi & Amortisasi;Debit
+32;1-10757;Akumulasi Amortisasi;Depresiasi & Amortisasi;Debit
+33;1-10800;Investasi;Aktiva Lainnya;Debit
+34;2-20100;Hutang Usaha;Akun Hutang;Kredit
+35;2-20101;Hutang Belum Ditagih;Akun Hutang;Kredit
+36;2-20200;Hutang Lain Lain;Kewajiban Lancar Lainnya;Kredit
+37;2-20201;Hutang Gaji;Kewajiban Lancar Lainnya;Kredit
+38;2-20202;Hutang Deviden;Kewajiban Lancar Lainnya;Kredit
+39;2-20203;Pendapatan Diterima Di Muka;Kewajiban Lancar Lainnya;Kredit
+40;2-20205;Hutang Konsinyasi;Kewajiban Lancar Lainnya;Kredit
+41;2-20301;Sarana Kantor Terhutang;Kewajiban Lancar Lainnya;Kredit
+42;2-20302;Bunga Terhutang;Kewajiban Lancar Lainnya;Kredit
+43;2-20399;Biaya Terhutang Lainnya;Kewajiban Lancar Lainnya;Kredit
+44;2-20400;Hutang Bank;Kewajiban Lancar Lainnya;Kredit
+45;2-20500;PPN Keluaran;Kewajiban Lancar Lainnya;Kredit
+46;2-20501;Hutang Pajak - PPh 21;Kewajiban Lancar Lainnya;Kredit
+47;2-20502;Hutang Pajak - PPh 22;Kewajiban Lancar Lainnya;Kredit
+48;2-20503;Hutang Pajak - PPh 23;Kewajiban Lancar Lainnya;Kredit
+49;2-20504;Hutang Pajak - PPh 29;Kewajiban Lancar Lainnya;Kredit
+50;2-20599;Hutang Pajak Lainnya;Kewajiban Lancar Lainnya;Kredit
+51;2-20600;Hutang dari Pemegang Saham;Kewajiban Lancar Lainnya;Kredit
+52;2-20601;Kewajiban Lancar Lainnya;Kewajiban Lancar Lainnya;Kredit
+53;2-20700;Kewajiban Manfaat Karyawan;Kewajiban Jangka Panjang;Kredit
+54;3-30000;Modal Saham;Ekuitas;Kredit
+55;3-30001;Tambahan Modal Disetor;Ekuitas;Kredit
+56;3-30100;Laba Ditahan;Ekuitas;Kredit
+57;3-30200;Deviden;Ekuitas;Kredit
+58;3-30300;Pendapatan Komprehensif Lainnya;Ekuitas;Kredit
+59;3-30999;Ekuitas Saldo Awal;Ekuitas;Kredit
+60;4-40000;Pendapatan;Pendapatan;Kredit
+61;4-40100;Diskon Penjualan;Pendapatan;Kredit
+62;4-40200;Retur Penjualan;Pendapatan;Kredit
+63;4-40201;Pendapatan Belum Ditagih;Pendapatan;Kredit
+64;5-50000;Beban Pokok Pendapatan;Harga Pokok Penjualan;Debit
+65;5-50100;Diskon Pembelian;Harga Pokok Penjualan;Debit
+66;5-50200;Retur Pembelian;Harga Pokok Penjualan;Debit
+67;5-50300;Pengiriman & Pengangkutan;Harga Pokok Penjualan;Debit
+68;5-50400;Biaya Impor;Harga Pokok Penjualan;Debit
+69;5-50500;Biaya Produksi;Harga Pokok Penjualan;Debit
+70;6-60000;Biaya Penjualan;Beban;Debit
+71;6-60001;   Iklan & Promosi;Beban;Debit
+72;6-60002;   Komisi & Fee;Beban;Debit
+73;6-60003;   Bensin, Tol dan Parkir - Penjualan;Beban;Debit
+74;6-60004;   Perjalanan Dinas - Penjualan;Beban;Debit
+75;6-60005;   Komunikasi - Penjualan;Beban;Debit
+76;6-60006;   Marketing Lainnya;Beban;Debit
+77;6-60100;Biaya Umum & Administratif;Beban;Debit
+78;6-60101;   Gaji;Beban;Debit
+79;6-60102;   Upah;Beban;Debit
+80;6-60103;   Makanan & Transportasi;Beban;Debit
+81;6-60104;   Lembur;Beban;Debit
+82;6-60105;   Pengobatan;Beban;Debit
+83;6-60106;   THR & Bonus;Beban;Debit
+84;6-60107;   Jamsostek;Beban;Debit
+85;6-60108;   Insentif;Beban;Debit
+86;6-60109;   Pesangon;Beban;Debit
+87;6-60110;   Manfaat dan Tunjangan Lain;Beban;Debit
+88;6-60200;   Donasi;Beban;Debit
+89;6-60201;   Hiburan;Beban;Debit
+90;6-60202;   Bensin, Tol dan Parkir - Umum;Beban;Debit
+91;6-60203;   Perbaikan & Pemeliharaan;Beban;Debit
+92;6-60204;   Perjalanan Dinas - Umum;Beban;Debit
+93;6-60205;   Makanan;Beban;Debit
+94;6-60206;   Komunikasi - Umum;Beban;Debit
+95;6-60207;   Iuran & Langganan;Beban;Debit
+96;6-60208;   Asuransi;Beban;Debit
+97;6-60209;   Legal & Profesional;Beban;Debit
+98;6-60210;   Beban Manfaat Karyawan;Beban;Debit
+99;6-60211;   Sarana Kantor;Beban;Debit
+100;6-60212;   Pelatihan & Pengembangan;Beban;Debit
+101;6-60213;   Beban Piutang Tak Tertagih;Beban;Debit
+102;6-60214;   Pajak dan Perizinan;Beban;Debit
+103;6-60215;   Denda;Beban;Debit
+104;6-60217;   Listrik;Beban;Debit
+105;6-60218;   Air;Beban;Debit
+106;6-60219;   IPL;Beban;Debit
+107;6-60220;   Langganan Software;Beban;Debit
+108;6-60300;   Beban Kantor;Beban;Debit
+109;6-60301;   Alat Tulis Kantor & Printing;Beban;Debit
+110;6-60302;   Bea Materai;Beban;Debit
+111;6-60303;   Keamanan dan Kebersihan;Beban;Debit
+112;6-60304;   Supplies dan Material;Beban;Debit
+113;6-60305;   Pemborong;Beban;Debit
+114;6-60400;   Biaya Sewa - Bangunan;Beban;Debit
+115;6-60401;   Biaya Sewa - Kendaraan;Beban;Debit
+116;6-60402;   Biaya Sewa - Operasional;Beban;Debit
+117;6-60403;   Biaya Sewa - Lain - lain;Beban;Debit
+118;6-60500;   Penyusutan - Bangunan;Beban;Debit
+119;6-60501;   Penyusutan - Perbaikan Bangunan;Beban;Debit
+120;6-60502;   Penyusutan - Kendaraan;Beban;Debit
+121;6-60503;   Penyusutan - Mesin & Peralatan;Beban;Debit
+122;6-60504;   Penyusutan - Peralatan Kantor;Beban;Debit
+123;6-60599;   Penyusutan - Aset Sewa Guna Usaha;Beban;Debit
+124;6-60216;Pengeluaran Barang Rusak;Beban;Debit
+125;7-70000;Pendapatan Bunga - Bank;Pendapatan Lainnya;Kredit
+126;7-70001;Pendapatan Bunga - Deposito;Pendapatan Lainnya;Kredit
+127;7-70002;Pendapatan Komisi - Barang Konsinyasi;Pendapatan Lainnya;Kredit
+128;7-70003;Pembulatan;Pendapatan Lainnya;Kredit
+129;7-70099;Pendapatan Lain - lain;Pendapatan Lainnya;Kredit
+130;8-80000;Beban Bunga;Beban Lainnya;Debit
+131;8-80001;Provisi;Beban Lainnya;Debit
+132;8-80002;(Laba)/Rugi Pelepasan Aset Tetap;Beban Lainnya;Debit
+133;8-80100;Penyesuaian Persediaan;Beban Lainnya;Debit
+134;8-80999;Beban Lain - lain;Beban Lainnya;Debit
+135;9-90000;Beban Pajak - Kini;Beban Lainnya;Debit
+136;9-90001;Beban Pajak - Tangguhan;Beban Lainnya;Debit
